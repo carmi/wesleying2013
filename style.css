@@ -1,5 +1,5 @@
 /*
-Theme Name: Wesleying Twenty Twelve
+Theme Name: Wesleying 2.013 (based off Twenty Twelve)
 Theme URI: http://wordpress.org/extend/themes/twentytwelve
 Author: Evan Carmi
 Author URI: http://ecarmi.org/
@@ -8,4 +8,4 @@ Template:       twentytwelve
 Version:        0.1.0
 */
 
-@import url("../twentyeleven/style.css");
+@import url("../twentytwelve/style.css");
