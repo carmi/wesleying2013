@@ -1,0 +1,11 @@
+/*
+Theme Name: Wesleying Twenty Twelve
+Theme URI: http://wordpress.org/extend/themes/twentytwelve
+Author: Evan Carmi
+Author URI: http://ecarmi.org/
+Description: A custom Wesleying wordpress theme designed in 2012 by Evan Carmi based of the Twenty Twelve theme.
+Template:       twentytwelve
+Version:        0.1.0
+*/
+
+@import url("../twentyeleven/style.css");
