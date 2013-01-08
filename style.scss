@@ -10,5 +10,14 @@ Version:        0.1.0
 
 @import url("../twentytwelve/style.css");
 
+body {
+  font-size: 14px;
+  font-size: 1rem;
+  font-family: "Crimson Text", Georgia, serif;
+  text-rendering: optimizeLegibility;
+  color: #444;
+
+  background-color: #fff;
+}
 
 @import "font-awesome/sass/font-awesome.scss"

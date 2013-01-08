@@ -8,6 +8,14 @@ Description: A custom Wesleying wordpress theme designed in 2013 by Evan Carmi b
 Template:       twentytwelve
 Version:        0.1.0
 */
+body {
+  font-size: 14px;
+  font-size: 1rem;
+  font-family: "Crimson Text", Georgia, serif;
+  text-rendering: optimizeLegibility;
+  color: #444;
+  background-color: #fff; }
+
 /*  Font Awesome
     the iconic font designed for use with Twitter Bootstrap
     -------------------------------------------------------

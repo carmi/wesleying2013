@@ -25,6 +25,7 @@
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 <![endif]-->
+<link rel='stylesheet' id='twentytwelve-fonts-css'  href='http://fonts.googleapis.com/css?family=Crimson+Text:400,700,400italic|Open+Sans:400,800,700|Open+Sans+Condensed:300,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
 <?php wp_head(); ?>
 </head>
 
