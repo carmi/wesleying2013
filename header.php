@@ -31,25 +31,25 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
-	<header id="masthead" class="site-header" role="banner">
+  <header id="masthead" class="site-header" role="banner">
 
-		<?php $header_image = get_header_image();
-		if ( ! empty( $header_image ) ) : ?>
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" /></a>
-		<?php endif; ?>
+    <?php $header_image = get_header_image();
+    if ( ! empty( $header_image ) ) : ?>
+      <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" /></a>
+    <?php endif; ?>
 
-		<hgroup>
-		<?php $tagline =  get_bloginfo('description');
-		if ( ! empty ( $tagline ) ) : ?> 
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-		<?php endif; ?>
-		</hgroup>
+    <hgroup>
+    <?php $tagline =  get_bloginfo('description');
+    if ( ! empty ( $tagline ) ) : ?> 
+      <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+    <?php endif; ?>
+    </hgroup>
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<h3 class="menu-toggle"><?php _e( 'Menu', 'twentytwelve' ); ?></h3>
-			<div class="skip-link assistive-text"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentytwelve' ); ?>"><?php _e( 'Skip to content', 'twentytwelve' ); ?></a></div>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+    <nav id="site-navigation" class="main-navigation" role="navigation">
+      <h3 class="menu-toggle"><?php _e( 'Menu', 'twentytwelve' ); ?></h3>
+      <div class="skip-link assistive-text"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentytwelve' ); ?>"><?php _e( 'Skip to content', 'twentytwelve' ); ?></a></div>
+      <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+    </nav><!-- #site-navigation -->
+  </header><!-- #masthead -->
 
-	<div id="main" class="wrapper">
+  <div id="main" class="wrapper">
