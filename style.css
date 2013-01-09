@@ -31,7 +31,7 @@ article div.entry-content p {
   font-family: 'Open Sans Condensed';
   font-weight: 700; }
 
-footer.entry-meta time.entry-date, footer.entry-meta span.by-author span.author.vcard {
+footer.entry-meta span.by-author span.author.vcard, footer.entry-meta span.comments-link {
   font-weight: 700; }
 
 div.more-link a.more-link {
