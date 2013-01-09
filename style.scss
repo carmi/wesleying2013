@@ -41,4 +41,29 @@ article div.entry-content {
   font-weight: 700;
 }
 
+footer.entry-meta {
+  time.entry-date, span.by-author span.author.vcard {
+    font-weight: 700;
+  }
+}
+
+div.more-link {
+  a.more-link {
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Open Sans Condensed';
+    font-weight: 700;
+    padding: 3px 15px 3px 15px;
+    background-color: rgba(230, 230, 230, 0.40);
+    &:hover { background-color: rgba(230, 230, 230, 1.00); }
+    border-radius: 6px;
+  }
+}
+
+div.entry-content blockquote {
+  border-left: 1px solid rgba(104, 104, 104, 0.09);
+}
+
+
 @import "font-awesome/sass/font-awesome.scss"
