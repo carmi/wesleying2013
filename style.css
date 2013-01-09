@@ -31,6 +31,14 @@ article div.entry-content p {
   font-family: 'Open Sans Condensed';
   font-weight: 700; }
 
+.entry-header div.category-flyer {
+  float: right;
+  font-weight: normal;
+  opacity: .7; }
+
+.entry-header div.category-flyer.featured i {
+  color: #CC6200; }
+
 footer.entry-meta span.by-author span.author.vcard, footer.entry-meta span.comments-link {
   font-weight: 700; }
 

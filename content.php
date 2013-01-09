@@ -20,6 +20,15 @@
       <h1 class="entry-title"><?php the_title(); ?></h1>
       <?php else : ?>
       <h1 class="entry-title">
+
+      <?php if ( has_category( 'featured', $post ) ) : ?>
+        <div class="category-flyer featured" title="This is a featured post"><i class="icon-star-empty"></i> FEATURED</div>
+      <?php elseif ( has_category( 'events', $post ) ) : ?>
+        <div class="category-flyer event" title="This is an event post"><i class="icon-calendar"></i> EVENT</div>
+      <?php elseif ( has_category( 'music', $post ) ) : ?>
+        <div class="category-flyer music" title="This is a music post"><i class="icon-music"></i> MUSIC</div>
+      <?php endif; ?>
+
         <a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'twentytwelve' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a>
       </h1>
       <?php endif; // is_single() ?>
