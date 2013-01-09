@@ -18,8 +18,12 @@ body {
   color: #444;
   background-color: #fff; }
 
+body.custom-background {
+  background-color: #fff!important; }
+
 body .site {
-  box-shadow: none; }
+  box-shadow: none;
+  margin-top: 0; }
 
 article div.entry-content p {
   font-family: "Crimson Text", Georgia, serif;
@@ -40,10 +44,12 @@ article div.entry-content p {
   color: #CC6200; }
 
 header#masthead {
-  padding-top: 0px; }
+  padding-top: 0px;
+  padding-top: 0rem; }
   header#masthead img {
     width: 100%;
     margin-top: 0px;
+    padding-top: 0rem;
     border-radius: 0px; }
 
 footer.entry-meta span.by-author span.author.vcard, footer.entry-meta span.comments-link {
