@@ -6,6 +6,8 @@
  *
  */
 
+
+
 /**
  * Sets up the content width value based on the theme's design and stylesheet.
  */
