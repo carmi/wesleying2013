@@ -74,7 +74,7 @@ function twentytwelve_entry_meta() {
 endif;
 
 
-// Customize 
+// Customize the read more link
 add_filter( 'the_content_more_link', 'my_more_link', 10, 2 );
 
 function my_more_link( $more_link, $more_link_text ) {
@@ -86,3 +86,13 @@ function wrap_readmore($more_link)
     return '<div class="more-link">'.$more_link.'</div>';
 }
 add_filter('the_content_more_link', 'wrap_readmore', 10, 1);
+
+// Disable custom backgrounds
+function remove_custom_background_theme() {
+    global $_wp_theme_features;
+    unset($_wp_theme_features['custom-background']);
+}
+add_action('after_setup_theme', 'remove_custom_background_theme', 11);
+
+
+
