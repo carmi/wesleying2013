@@ -53,6 +53,14 @@ article div.entry-content p {
   color: #CC6200;
 }
 
+header#masthead {
+  padding-top: 0px;
+  img {
+    width: 100%;
+    margin-top: 0px;
+    border-radius: 0px;
+  }
+}
 
 footer.entry-meta {
   span.by-author span.author.vcard, span.comments-link {
