@@ -15,20 +15,10 @@ if ( ! isset( $content_width ) )
 	$content_width = 625;
 
 
-	 function mytheme_dequeue_fonts() {
-	     wp_dequeue_style( 'twentytwelve-fonts' );
-	 }
-	 add_action( 'wp_enqueue_scripts', 'mytheme_dequeue_fonts', 11 );
-
-
-
-#			'family' => 'Crimson+Text:400,700,400italic|Open+Sans:400,800,700|Open+Sans+Condensed:300,700',
-#			'subset' => $subsets,
-#		);
-#		wp_enqueue_style( 'twentytwelve-fonts', add_query_arg( $query_args, "$protocol://fonts.googleapis.com/css" ), array(), null );
-#	}
-#
-
+function mytheme_dequeue_fonts() {
+   wp_dequeue_style( 'twentytwelve-fonts' );
+}
+add_action( 'wp_enqueue_scripts', 'mytheme_dequeue_fonts', 11 );
 
 
 if ( ! function_exists( 'twentytwelve_entry_meta' ) ) :
