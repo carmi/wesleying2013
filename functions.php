@@ -121,15 +121,4 @@ function featured_post_image() {
   return $img_url;
 }
 
-function imgSize($img){
-
-  if(strpos($img, "/") == 0){
-    $img = substr($img,1);
-  }
-  
-  $size = @getimagesize($img);
-  return $size;
-}
-
 add_action('wp_head', 'featured_post_image');
-add_action('wp_head', 'imgSize');
