@@ -95,4 +95,41 @@ function remove_custom_background_theme() {
 add_action('after_setup_theme', 'remove_custom_background_theme', 11);
 
 
+// Functions used in header.php to get first_image of featured posts
+/*
+ * first_image()
+ * return the first image or an empty string for a given post
+ * Note: does not handle default images here
+ */
+function featured_post_image() {
+  global $post, $posts;
+  $img_url = "";
+  ob_start();
+  ob_end_clean();
 
+  $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
+  $match = $matches[1];
+
+  if (has_post_thumbnail($post->ID)) {
+    $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'single-post-thumbnail' );
+    $img_url = $thumb['0'];
+  } elseif (!empty($match)) {
+    $img_url = $match[0];
+  } else {
+    $img_url = get_bloginfo("stylesheet_directory")."/images/no-featured-image.jpg";
+  }
+  return $img_url;
+}
+
+function imgSize($img){
+
+  if(strpos($img, "/") == 0){
+    $img = substr($img,1);
+  }
+  
+  $size = @getimagesize($img);
+  return $size;
+}
+
+add_action('wp_head', 'featured_post_image');
+add_action('wp_head', 'imgSize');

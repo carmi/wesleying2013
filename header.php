@@ -35,15 +35,27 @@
 
     <?php $header_image = get_header_image();
     if ( ! empty( $header_image ) ) : ?>
-      <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" /></a>
+
+      <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" title="<?php bloginfo( 'description' ); ?>" alt="" /></a>
     <?php endif; ?>
 
-    <hgroup>
-    <?php $tagline =  get_bloginfo('description');
-    if ( ! empty ( $tagline ) ) : ?> 
-      <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-    <?php endif; ?>
-    </hgroup>
+    <div id="featured">  
+        <ul id="carousel">  
+            <?php
+            $featured_posts = get_posts('numberposts=4&category=12290');
+            foreach( $featured_posts as $post ) {
+                $image = featured_post_image($post->ID);
+                ?>
+                <li><a href="<?php echo get_permalink($post->ID) ?>" title="<?php echo $post->post_title ?>">
+                  <span class="featured-post-title"><?php echo $post->post_title ?></span>
+                  <img src="<?php echo $image ?>" alt="<?php echo $post->post_title ?>" />
+                </a></li>
+          <?php 
+            }
+            ?>
+        </ul>
+        <div class="clear"></div>
+    </div>
 
     <nav id="site-navigation" class="main-navigation" role="navigation">
       <h3 class="menu-toggle"><?php _e( 'Menu', 'twentytwelve' ); ?></h3>

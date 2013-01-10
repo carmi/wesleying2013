@@ -1,5 +1,5 @@
 /*
-Theme Name: Wesleying 2.013 (based off Twenty Twelve)
+Theme Name: Wesleying 2013 (based off Twenty Twelve)
 Theme URI: http://wordpress.org/extend/themes/twentytwelve
 Author: Evan Carmi
 Author URI: http://ecarmi.org/
@@ -58,11 +58,68 @@ article div.entry-content p {
 header#masthead {
   padding-top: 0px;
   padding-top: 0rem;
-  img {
+  img.header-image {
     width: 100%;
     margin-top: 0px;
     padding-top: 0rem;
     border-radius: 0px;
+    opacity: 0.15;
+    $opacity-duration: .7s;
+    transition: opacity $opacity-duration ease-in-out;
+    -moz-transition: opacity $opacity-duration ease-in-out;
+    -webkit-transition: opacity $opacity-duration ease-in-out;
+    &:hover { opacity: .4; }
+
+  }
+  $li-width: 230px;
+  $li-height: 150px;
+  div#featured li {
+    overflow: hidden;
+    display: block;
+    float: left;
+    border: 1px solid red;
+    margin-right: 13px;
+    &:last-child { margin-right: 0px; }
+    width: 228px;
+    height: 200px;
+
+    a {
+      height: 100%;
+      display: block;
+        overflow: hidden;
+        position: relative;
+        span.featured-post-title {
+          background-color: rgba(0, 0, 0, 0.6);
+          position: absolute;
+          width: 220px;
+          bottom: 5px;
+          color: #fff;
+          border-radius: 3px;
+          padding: 2px;
+        }
+        img {
+          //clip: rect(40px  200px  150px  30px);
+          //width: 100px;
+          max-width: 100%
+        }
+
+      div {
+        overflow: hidden;
+        position: relative;
+        span.featured-post-title {
+          background-color: #fff;
+          position: absolute;
+          width: 220px;
+          bottom: 5px;
+        }
+        img {
+          //clip: rect(40px  200px  150px  30px);
+          //width: 100px;
+          max-width: 100%
+        }
+      }
+
+    }
   }
 }
 
