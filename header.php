@@ -40,6 +40,13 @@
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" title="<?php bloginfo( 'description' ); ?>" alt="" /></a>
     <?php endif; ?>
 
+    <hgroup>
+    <?php $tagline =  get_bloginfo('description');
+    if ( ! empty ( $tagline ) ) : ?> 
+      <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+    <?php endif; ?>
+    </hgroup>
+
     <nav id="site-navigation" class="main-navigation" role="navigation">
       <h3 class="menu-toggle"><?php _e( 'Menu', 'twentytwelve' ); ?></h3>
       <div class="skip-link assistive-text"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentytwelve' ); ?>"><?php _e( 'Skip to content', 'twentytwelve' ); ?></a></div>
@@ -54,6 +61,7 @@
                 $image = featured_post_image($post->ID);
                 ?>
                   <li><a href="<?php echo get_permalink($post->ID) ?>" title="<?php echo $post->post_title ?>" data-postid="<?php echo $post->ID ?>">
+                  <i class="icon-arrow-down featured-post-bar"></i>
                   <span class="featured-post-title"><?php echo $post->post_title ?></span>
                   <img src="<?php echo $image ?>" alt="<?php echo $post->post_title ?>" />
                 </a></li>

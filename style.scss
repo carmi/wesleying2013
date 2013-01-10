@@ -69,57 +69,64 @@ header#masthead {
     -moz-transition: opacity $opacity-duration ease-in-out;
     -webkit-transition: opacity $opacity-duration ease-in-out;
     &:hover { opacity: .4; }
-
   }
+
   $li-width: 230px;
   $li-height: 150px;
-  div#featured-bar li {
-    overflow: hidden;
-    display: block;
-    float: left;
-    border: 1px solid red;
-    margin-right: 13px;
-    &:last-child { margin-right: 0px; }
-    width: 228px;
-    height: 200px;
-    margin-top: 14px;
-
-    a {
-      height: 100%;
+  div#featured-bar {
+    border-bottom: 1px solid #EDEDED;
+    padding-bottom: 12px;
+    li {
+      overflow: hidden;
       display: block;
+      float: left;
+      margin-right: 13px;
+      &:last-child { margin-right: 0px; }
+      width: 228px;
+      height: 100px;
+      margin-top: 14px;
+
+      a {
+        height: 100%;
+        display: block;
         overflow: hidden;
         position: relative;
-        span.featured-post-title {
-          background-color: rgba(0, 0, 0, 0.6);
+
+        i.featured-post-bar {
+          text-decoration: none;
           position: absolute;
-          width: 220px;
+          top: 5px;
+          right: 5px;
+          color: #fff;
+          opacity: .4;
+          font-size: 18px;
+        }
+        span.featured-post-title {
+          background-color: rgba(68, 68, 68, 0.7);
+          position: absolute;
           bottom: 5px;
           color: #fff;
           border-radius: 3px;
           padding: 2px;
+          padding-bottom: 3px;
+          margin: 5px;
+          font-family: 'Open Sans Condensed';
+          font-weight: 700;
+          font-size: 14px;
+          text-align: center;
+          line-height: 16px;
+        }
+        &:hover i.featured-post-bar {
+          opacity: .8;
+        }
+        &:hover span.featured-post-title {
+          background-color: rgba(0, 0, 0, 0.8);
+          color: #EDEDED;
         }
         img {
-          //clip: rect(40px  200px  150px  30px);
-          //width: 100px;
-          max-width: 100%
-        }
-
-      div {
-        overflow: hidden;
-        position: relative;
-        span.featured-post-title {
-          background-color: #fff;
-          position: absolute;
-          width: 220px;
-          bottom: 5px;
-        }
-        img {
-          //clip: rect(40px  200px  150px  30px);
-          //width: 100px;
           max-width: 100%
         }
       }
-
     }
   }
 }
@@ -146,6 +153,10 @@ div.more-link {
 
 div.entry-content blockquote {
   border-left: 1px solid #EDEDED;
+}
+
+span.nav-next, span.nav-previous {
+  font-weight: bold;
 }
 
 

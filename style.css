@@ -57,41 +57,52 @@ header#masthead {
     -webkit-transition: opacity 0.7s ease-in-out; }
     header#masthead img.header-image:hover {
       opacity: .4; }
-  header#masthead div#featured-bar li {
-    overflow: hidden;
-    display: block;
-    float: left;
-    border: 1px solid red;
-    margin-right: 13px;
-    width: 228px;
-    height: 200px;
-    margin-top: 14px; }
-    header#masthead div#featured-bar li:last-child {
-      margin-right: 0px; }
-    header#masthead div#featured-bar li a {
-      height: 100%;
-      display: block;
+  header#masthead div#featured-bar {
+    border-bottom: 1px solid #ededed;
+    padding-bottom: 12px; }
+    header#masthead div#featured-bar li {
       overflow: hidden;
-      position: relative; }
-      header#masthead div#featured-bar li a span.featured-post-title {
-        background-color: rgba(0, 0, 0, 0.6);
-        position: absolute;
-        width: 220px;
-        bottom: 5px;
-        color: #fff;
-        border-radius: 3px;
-        padding: 2px; }
-      header#masthead div#featured-bar li a img {
-        max-width: 100%; }
-      header#masthead div#featured-bar li a div {
+      display: block;
+      float: left;
+      margin-right: 13px;
+      width: 228px;
+      height: 100px;
+      margin-top: 14px; }
+      header#masthead div#featured-bar li:last-child {
+        margin-right: 0px; }
+      header#masthead div#featured-bar li a {
+        height: 100%;
+        display: block;
         overflow: hidden;
         position: relative; }
-        header#masthead div#featured-bar li a div span.featured-post-title {
-          background-color: #fff;
+        header#masthead div#featured-bar li a i.featured-post-bar {
+          text-decoration: none;
           position: absolute;
-          width: 220px;
-          bottom: 5px; }
-        header#masthead div#featured-bar li a div img {
+          top: 5px;
+          right: 5px;
+          color: #fff;
+          opacity: .4;
+          font-size: 18px; }
+        header#masthead div#featured-bar li a span.featured-post-title {
+          background-color: rgba(68, 68, 68, 0.7);
+          position: absolute;
+          bottom: 5px;
+          color: #fff;
+          border-radius: 3px;
+          padding: 2px;
+          padding-bottom: 3px;
+          margin: 5px;
+          font-family: 'Open Sans Condensed';
+          font-weight: 700;
+          font-size: 14px;
+          text-align: center;
+          line-height: 16px; }
+        header#masthead div#featured-bar li a:hover i.featured-post-bar {
+          opacity: .8; }
+        header#masthead div#featured-bar li a:hover span.featured-post-title {
+          background-color: rgba(0, 0, 0, 0.8);
+          color: #EDEDED; }
+        header#masthead div#featured-bar li a img {
           max-width: 100%; }
 
 footer.entry-meta span.by-author span.author.vcard, footer.entry-meta span.comments-link {
@@ -111,6 +122,9 @@ div.more-link a.more-link {
 
 div.entry-content blockquote {
   border-left: 1px solid #ededed; }
+
+span.nav-next, span.nav-previous {
+  font-weight: bold; }
 
 /*  Font Awesome 3.0
     the iconic font designed for use with Twitter Bootstrap
