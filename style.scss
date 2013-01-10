@@ -73,7 +73,7 @@ header#masthead {
   }
   $li-width: 230px;
   $li-height: 150px;
-  div#featured li {
+  div#featured-bar li {
     overflow: hidden;
     display: block;
     float: left;
@@ -82,6 +82,7 @@ header#masthead {
     &:last-child { margin-right: 0px; }
     width: 228px;
     height: 200px;
+    margin-top: 14px;
 
     a {
       height: 100%;

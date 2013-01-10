@@ -57,22 +57,23 @@ header#masthead {
     -webkit-transition: opacity 0.7s ease-in-out; }
     header#masthead img.header-image:hover {
       opacity: .4; }
-  header#masthead div#featured li {
+  header#masthead div#featured-bar li {
     overflow: hidden;
     display: block;
     float: left;
     border: 1px solid red;
     margin-right: 13px;
     width: 228px;
-    height: 200px; }
-    header#masthead div#featured li:last-child {
+    height: 200px;
+    margin-top: 14px; }
+    header#masthead div#featured-bar li:last-child {
       margin-right: 0px; }
-    header#masthead div#featured li a {
+    header#masthead div#featured-bar li a {
       height: 100%;
       display: block;
       overflow: hidden;
       position: relative; }
-      header#masthead div#featured li a span.featured-post-title {
+      header#masthead div#featured-bar li a span.featured-post-title {
         background-color: rgba(0, 0, 0, 0.6);
         position: absolute;
         width: 220px;
@@ -80,17 +81,17 @@ header#masthead {
         color: #fff;
         border-radius: 3px;
         padding: 2px; }
-      header#masthead div#featured li a img {
+      header#masthead div#featured-bar li a img {
         max-width: 100%; }
-      header#masthead div#featured li a div {
+      header#masthead div#featured-bar li a div {
         overflow: hidden;
         position: relative; }
-        header#masthead div#featured li a div span.featured-post-title {
+        header#masthead div#featured-bar li a div span.featured-post-title {
           background-color: #fff;
           position: absolute;
           width: 220px;
           bottom: 5px; }
-        header#masthead div#featured li a div img {
+        header#masthead div#featured-bar li a div img {
           max-width: 100%; }
 
 footer.entry-meta span.by-author span.author.vcard, footer.entry-meta span.comments-link {
