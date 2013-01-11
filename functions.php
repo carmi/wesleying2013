@@ -120,5 +120,36 @@ function featured_post_image() {
   }
   return $img_url;
 }
-
 add_action('wp_head', 'featured_post_image');
+
+/*
+ * Build category-flyer html for a given post
+ */
+function build_category_flyer ( $post ) {
+  ob_start();
+  $category = $icon = $title = $desc = '';
+  if ( has_category( 'featured', $post ) ) {
+    $category = 'featured';
+    $icon = "icon-star-empty";
+    $title = "This is a featured post";
+    $desc = "FEATURED";
+  } elseif ( has_category( 'events', $post ) ) {
+    $category = 'events';
+    $icon = "icon-calendar";
+    $title = "This is an event post";
+    $desc = "EVENT";
+  } elseif ( has_category( 'music', $post ) ) {
+    $category = 'music';
+    $icon = "icon-music";
+    $title = "This is a music post";
+    $desc = "MUSIC";
+  }
+
+  return sprintf('<div class="category-tag %s" title="%s"><a href="%s"><i class="%s"></i> %s</a></div>',
+    $category,
+    $title,
+    get_category_link( get_cat_ID($category) ),
+    $icon,
+    $desc);
+}
+add_action('wp_head', 'build_category_flyer');

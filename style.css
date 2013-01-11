@@ -41,17 +41,23 @@ article div.entry-content strong {
   font-family: 'Open Sans Condensed';
   font-weight: 700; }
 
+header.entry-header h1 {
+  color: #8C0000; }
+
 header.entry-header h1 a {
   color: #8C0000; }
   header.entry-header h1 a:hover {
-    color: #DA0000; }
+    color: #BB3C3C; }
 
-.entry-header div.category-flyer {
+.entry-header div.category-tag a {
   float: right;
   font-weight: normal;
-  opacity: .7; }
+  opacity: .7;
+  color: #444; }
+  .entry-header div.category-tag a:hover {
+    color: #000; }
 
-.entry-header div.category-flyer.featured i {
+.entry-header div.category-tag.featured a i {
   color: #CC6200; }
 
 header#masthead {
