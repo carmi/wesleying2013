@@ -15,6 +15,7 @@ Version:        0.1.0
 
 
 $line-height: 22px;
+$line-breaks: 16px;
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -32,7 +33,7 @@ body .site {
 }
 
 article div.entry-content p {
-  margin-bottom: 16px;
+  margin-bottom: $line-breaks;
 }
 article div.entry-content, article div.entry-content p {
   font-family: "Crimson Text", Georgia, serif;
@@ -42,9 +43,20 @@ article div.entry-content, article div.entry-content p {
   line-height: 1.4;
 }
 
+article div.entry-content strong {
+  line-height: 1;
+}
+
 .entry-header .entry-title {
   font-family: 'Open Sans Condensed';
   font-weight: 700;
+}
+
+header.entry-header h1 a {
+  color: #8C0000;
+  &:hover {
+    color: #DA0000;
+  }
 }
 
 .entry-header div.category-flyer {
@@ -156,7 +168,7 @@ div.more-link {
 div.entry-content blockquote {
   border-left: 1px solid #EDEDED;
   font-style: normal;
-  padding: 0 $line-height 0 $line-height;
+  padding: 0 24px 0 24px;
 }
 
 span.nav-next, span.nav-previous {

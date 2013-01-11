@@ -34,9 +34,17 @@ article div.entry-content, article div.entry-content p {
   font-size: 1.142857143rem;
   line-height: 1.4; }
 
+article div.entry-content strong {
+  line-height: 1; }
+
 .entry-header .entry-title {
   font-family: 'Open Sans Condensed';
   font-weight: 700; }
+
+header.entry-header h1 a {
+  color: #8C0000; }
+  header.entry-header h1 a:hover {
+    color: #DA0000; }
 
 .entry-header div.category-flyer {
   float: right;
@@ -126,7 +134,7 @@ div.more-link a.more-link {
 div.entry-content blockquote {
   border-left: 1px solid #ededed;
   font-style: normal;
-  padding: 0 22px 0 22px; }
+  padding: 0 24px 0 24px; }
 
 span.nav-next, span.nav-previous {
   font-weight: bold; }
