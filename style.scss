@@ -14,6 +14,7 @@ Version:        0.1.0
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,800,700);
 
 
+$line-height: 22px;
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -155,7 +156,7 @@ div.more-link {
 div.entry-content blockquote {
   border-left: 1px solid #EDEDED;
   font-style: normal;
-  padding: 0 24px 0 24px;
+  padding: 0 $line-height 0 $line-height;
 }
 
 span.nav-next, span.nav-previous {
@@ -170,5 +171,9 @@ article.post {
   embed, iframe, object, video {
     margin-bottom: 0;
 }}
+
+nav.nav-single {
+  margin-bottom: $line-height;
+}
 
 @import "font-awesome/sass/font-awesome.scss"
