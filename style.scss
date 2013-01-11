@@ -31,6 +31,9 @@ body .site {
 }
 
 article div.entry-content p {
+  margin-bottom: 16px;
+}
+article div.entry-content, article div.entry-content p {
   font-family: "Crimson Text", Georgia, serif;
   // Use rem with pixel fallback based on TwentyTwelve's setup
   font-size: 16px;
@@ -163,5 +166,9 @@ article.post {
   //margin-bottom: 48px;
 }
 
+.entry-content {
+  embed, iframe, object, video {
+    margin-bottom: 0;
+}}
 
 @import "font-awesome/sass/font-awesome.scss"
