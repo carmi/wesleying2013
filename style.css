@@ -77,7 +77,13 @@ header#masthead {
   header#masthead nav.main-navigation li:last-child {
     margin-right: 0px; }
   header#masthead nav.main-navigation li.searchform {
+    height: 100%;
     float: right; }
+    header#masthead nav.main-navigation li.searchform div.searchbox {
+      position: absolute;
+      top: 5px;
+      right: 0;
+      white-space: nowrap; }
   header#masthead div#featured-bar li {
     overflow: hidden;
     display: block;
@@ -170,9 +176,6 @@ aside {
 
 .entry-content img, .comment-content img, .widget img, img.header-image, .author-avatar img, img.wp-post-image {
   border-radius: 2px; }
-
-#s {
-  vertical-align: bottom; }
 
 /*  Font Awesome 3.0
     the iconic font designed for use with Twitter Bootstrap

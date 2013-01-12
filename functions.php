@@ -162,24 +162,8 @@ function add_search_box($items, $args) {
         $searchform = ob_get_contents();
         ob_end_clean();
 
-        $items .= '<li class="searchform">' . $searchform . '</li>';
+        $items .= '<li class="searchform"><div class="searchbox">' . $searchform . '</div></li>';
 
     return $items;
 }
 add_filter('wp_nav_menu_items','add_search_box', 10, 2);
-
-
-if ( !function_exists( 'theme_enqueue_styles' ) ) :
-function theme_enqueue_styles() {
- 
-    // You should bump this version when changes are made to bust cache
-    $version = '3.6';
- 
-        // Register stylesheet of bp-dusk child theme
-    wp_register_style( 'wesleying2013', get_stylesheet_directory_uri() . '/style.css', array(), $version );
- 
-    // Enqueue stylesheet of bp-dusk chid theme
-    wp_enqueue_style( 'wesleying2013' );
-}
-add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles', 11  );
-endif;
