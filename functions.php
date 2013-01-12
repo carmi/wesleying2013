@@ -107,6 +107,7 @@ function featured_post_image() {
   ob_start();
   ob_end_clean();
 
+  if (empty($post)) return;
   $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
   $match = $matches[1];
 
@@ -126,7 +127,6 @@ add_action('wp_head', 'featured_post_image');
  * Build category-flyer html for a given post
  */
 function build_category_flyer ( $post ) {
-  ob_start();
   $category = $icon = $title = $desc = '';
   if ( has_category( 'featured', $post ) ) {
     $category = 'featured';
@@ -153,3 +153,17 @@ function build_category_flyer ( $post ) {
     $desc);
 }
 add_action('wp_head', 'build_category_flyer');
+
+
+function add_search_box($items, $args) {
+
+        ob_start();
+        get_search_form();
+        $searchform = ob_get_contents();
+        ob_end_clean();
+
+        $items .= '<li class="searchform">' . $searchform . '</li>';
+
+    return $items;
+}
+add_filter('wp_nav_menu_items','add_search_box', 10, 2);

@@ -60,7 +60,7 @@
             <?php
             $featured_posts = get_posts('numberposts=4&category=12290');
             foreach( $featured_posts as $post ) {
-                $image = featured_post_image($post->ID);
+                $image = featured_post_image();
                 ?>
                   <li><a href="<?php echo get_permalink($post->ID) ?>" title="<?php echo $post->post_title ?>" data-postid="<?php echo $post->ID ?>">
                   <i class="icon-arrow-down featured-post-bar"></i>
