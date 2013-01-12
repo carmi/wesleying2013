@@ -100,6 +100,9 @@ header#masthead {
     }
   li.searchform {
     float: right;
+    input {
+      vertical-align: bottom;
+    }
   }
 }
 
@@ -227,6 +230,10 @@ div.widget-area {
 
 aside {
   margin-bottom: 24px;
+}
+
+.entry-content img, .comment-content img, .widget img, img.header-image, .author-avatar img, img.wp-post-image {
+  border-radius: 2px;
 }
 
 @import "font-awesome/sass/font-awesome.scss"

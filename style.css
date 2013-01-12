@@ -78,6 +78,8 @@ header#masthead {
     margin-right: 0px; }
   header#masthead nav.main-navigation li.searchform {
     float: right; }
+    header#masthead nav.main-navigation li.searchform input {
+      vertical-align: bottom; }
   header#masthead div#featured-bar li {
     overflow: hidden;
     display: block;
@@ -167,6 +169,9 @@ div.widget-area #s {
 
 aside {
   margin-bottom: 24px; }
+
+.entry-content img, .comment-content img, .widget img, img.header-image, .author-avatar img, img.wp-post-image {
+  border-radius: 2px; }
 
 /*  Font Awesome 3.0
     the iconic font designed for use with Twitter Bootstrap
