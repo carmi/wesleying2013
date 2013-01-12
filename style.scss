@@ -94,11 +94,21 @@ header#masthead {
     &:hover { opacity: .4; }
   }
 
+  nav.main-navigation {
+    li:last-child {
+      margin-right: 0px;
+    }
+  li.searchform {
+    float: right;
+  }
+}
+
+
   $li-width: 230px;
   $li-height: 150px;
   div#featured-bar {
-    border-bottom: 1px solid $border-color;
-    padding-bottom: 12px;
+    //border-bottom: 1px solid $border-color;
+    //padding-bottom: 12px;
     li {
       overflow: hidden;
       display: block;
