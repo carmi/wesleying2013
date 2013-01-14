@@ -94,7 +94,7 @@ header#masthead {
     &:hover { opacity: .4; }
   }
 
-  $nav-fg: black;
+  $nav-fg: #444;
   $nav-bg: red;
   nav.main-navigation {
     li {
@@ -163,7 +163,7 @@ header#masthead {
           position: absolute;
           bottom: 5px;
           color: #575555;
-          border-radius: 3px;
+          border-radius: 3px 25px 25px 3px;
           padding: 2px;
           padding-bottom: 3px;
           margin: 5px;

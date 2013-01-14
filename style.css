@@ -79,13 +79,13 @@ header#masthead {
     header#masthead nav.main-navigation li a {
       font-weight: 600;
       padding: 2px 5px 2px 5px;
-      color: black;
+      color: #444444;
       line-height: 3; }
       header#masthead nav.main-navigation li a:hover {
-        background-color: black;
+        background-color: #444444;
         color: white; }
   header#masthead nav.main-navigation li.current-menu-item a {
-    border-top: 2px solid black;
+    border-top: 2px solid #444444;
     padding-top: 0; }
   header#masthead nav.main-navigation li:last-child {
     margin-right: 0px; }
@@ -121,7 +121,7 @@ header#masthead {
         position: absolute;
         bottom: 5px;
         color: #575555;
-        border-radius: 3px;
+        border-radius: 3px 25px 25px 3px;
         padding: 2px;
         padding-bottom: 3px;
         margin: 5px;
