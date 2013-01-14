@@ -121,7 +121,7 @@ header#masthead {
         position: absolute;
         bottom: 5px;
         color: #444;
-        border-radius: 3px;
+        border-radius: 2px;
         padding: 2px;
         padding-bottom: 3px;
         margin: 5px;
@@ -176,6 +176,8 @@ div.widget-area strong {
   font-size: 12px;
   color: white;
   background-color: #600; }
+  .widget-area .widget h3 a {
+    color: white; }
 
 aside {
   margin-bottom: 24px; }
