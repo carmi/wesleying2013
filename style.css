@@ -85,8 +85,8 @@ header#masthead {
         background-color: #000;
         color: white; }
   header#masthead nav.main-navigation li.current-menu-item a {
-    border-top: 2px solid #444444;
-    padding-top: 0; }
+    background-color: #000;
+    color: white; }
   header#masthead nav.main-navigation li:last-child {
     margin-right: 0px; }
   header#masthead nav.main-navigation li.searchform {
@@ -152,6 +152,25 @@ div.more-link a.more-link {
   border-radius: 3px 25px 25px 3px; }
   div.more-link a.more-link:hover {
     background-color: #e6e6e6; }
+
+#infinite-handle span {
+  background: #600;
+  font-family: 'Open Sans Condensed';
+  border: 1px solid #303030;
+  font-weight: 700;
+  border-radius: 2px;
+  color: #CCC;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+  font-size: 15px;
+  width: 92%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: block; }
+  #infinite-handle span:hover {
+    background: #832121;
+    color: #fff; }
 
 div.entry-content blockquote {
   border-left: 1px solid #ededed;
