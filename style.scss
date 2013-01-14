@@ -266,5 +266,12 @@ aside#sk-3 {
   }
 }
 
+aside#wppp-5 ul#wppp-5 {
+  ol, ul {
+    list-style-position: inside;
+    list-style-type: disc;
+  }
+}
+
 
 @import "font-awesome/sass/font-awesome.scss"

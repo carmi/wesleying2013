@@ -190,6 +190,10 @@ aside#sk-3 {
   aside#sk-3 textarea.sk-area {
     width: 94%; }
 
+aside#wppp-5 ul#wppp-5 ol, aside#wppp-5 ul#wppp-5 ul {
+  list-style-position: inside;
+  list-style-type: disc; }
+
 /*  Font Awesome 3.0
     the iconic font designed for use with Twitter Bootstrap
     -------------------------------------------------------
