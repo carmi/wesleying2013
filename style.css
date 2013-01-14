@@ -82,7 +82,7 @@ header#masthead {
       color: #444444;
       line-height: 3; }
       header#masthead nav.main-navigation li a:hover {
-        background-color: #444444;
+        background-color: #000;
         color: white; }
   header#masthead nav.main-navigation li.current-menu-item a {
     border-top: 2px solid #444444;
@@ -98,7 +98,7 @@ header#masthead {
     float: left;
     margin-right: 1.33%;
     width: 24%;
-    height: 120px;
+    height: 100px;
     margin-top: 14px; }
     header#masthead div#featured-bar li:last-child {
       margin-right: 0;
@@ -117,10 +117,10 @@ header#masthead {
         opacity: .4;
         font-size: 18px; }
       header#masthead div#featured-bar li a span.featured-post-title {
-        background-color: rgba(255, 255, 255, 0.9);
+        background-color: rgba(255, 255, 255, 0.85);
         position: absolute;
         bottom: 5px;
-        color: #575555;
+        color: #444;
         border-radius: 3px;
         padding: 2px;
         padding-bottom: 3px;
@@ -182,6 +182,11 @@ aside {
 
 .entry-content img, .comment-content img, .widget img, img.header-image, .author-avatar img, img.wp-post-image {
   border-radius: 2px; }
+
+aside#sk-3 {
+  font-size: 12px; }
+  aside#sk-3 textarea.sk-area {
+    width: 94%; }
 
 /*  Font Awesome 3.0
     the iconic font designed for use with Twitter Bootstrap

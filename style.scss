@@ -105,7 +105,7 @@ header#masthead {
         color: $nav-fg;
         line-height: 3;
         &:hover {
-          background-color: $nav-fg;
+          background-color: #000;
           color: white;
         }
       }
@@ -140,7 +140,7 @@ header#masthead {
         float: right;
       }
       width: 24%;
-      height: 120px;
+      height: 100px;
       margin-top: 14px;
 
       a {
@@ -159,10 +159,10 @@ header#masthead {
           font-size: 18px;
         }
         span.featured-post-title {
-          background-color: rgba(255, 255, 255, 0.9);
+          background-color: rgba(255, 255, 255, 0.85);
           position: absolute;
           bottom: 5px;
-          color: #575555;
+          color: #444;
           border-radius: 3px;
           padding: 2px;
           padding-bottom: 3px;
@@ -252,5 +252,16 @@ aside {
 .entry-content img, .comment-content img, .widget img, img.header-image, .author-avatar img, img.wp-post-image {
   border-radius: 2px;
 }
+
+// Sidebar and Plugins
+
+// Shoutbox
+aside#sk-3 {
+  font-size: 12px;
+  textarea.sk-area {
+    width: 94%;
+  }
+}
+
 
 @import "font-awesome/sass/font-awesome.scss"
