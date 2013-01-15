@@ -26,6 +26,8 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 <![endif]-->
 
+<?php wp_enqueue_script("jquery-ui-accordion"); ?>
+
 <?php wp_head(); ?>
 <script src="<?php echo get_bloginfo('stylesheet_directory'); ?>/js/wesleying2013.js" type="text/javascript"></script>
 </head>
