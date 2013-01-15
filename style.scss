@@ -112,10 +112,8 @@ header#masthead {
     }
     li.current-menu-item {
       a {
-        background-color: #000;
-        color: white;
-        //border-top: 2px solid $nav-fg;
-        //padding-top: 0;
+        border-top: 2px solid $nav-fg;
+        padding-top: 0;
 
       }
     }

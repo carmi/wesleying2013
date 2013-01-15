@@ -85,8 +85,8 @@ header#masthead {
         background-color: #000;
         color: white; }
   header#masthead nav.main-navigation li.current-menu-item a {
-    background-color: #000;
-    color: white; }
+    border-top: 2px solid #444444;
+    padding-top: 0; }
   header#masthead nav.main-navigation li:last-child {
     margin-right: 0px; }
   header#masthead nav.main-navigation li.searchform {
