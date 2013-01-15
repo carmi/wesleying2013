@@ -128,61 +128,63 @@ header#masthead {
   }
 
 
-  $li-width: 230px;
-  $li-height: 150px;
-  div#featured-bar {
-    li {
-      overflow: hidden;
-      display: block;
-      float: left;
-      margin-right: 1.33%;
-      &:last-child {
-        margin-right: 0;
-        float: right;
-      }
-      width: 24%;
-      height: 100px;
-      margin-top: 14px;
-
-      a {
-        height: 100%;
-        display: block;
+  @media (min-width: 600px) {
+    $li-width: 230px;
+    $li-height: 150px;
+    div#featured-bar {
+      li {
         overflow: hidden;
-        position: relative;
+        display: block;
+        float: left;
+        margin-right: 1.33%;
+        &:last-child {
+          margin-right: 0;
+          float: right;
+        }
+        width: 24%;
+        height: 100px;
+        margin-top: 14px;
 
-        i.featured-post-bar {
-          text-decoration: none;
-          position: absolute;
-          top: 5px;
-          right: 5px;
-          color: #fff;
-          opacity: .4;
-          font-size: 18px;
-        }
-        span.featured-post-title {
-          background-color: rgba(255, 255, 255, 0.85);
-          position: absolute;
-          bottom: 5px;
-          color: #444;
-          border-radius: 2px;
-          padding: 2px;
-          padding-bottom: 3px;
-          margin: 5px;
-          font-family: 'Open Sans Condensed';
-          font-weight: 700;
-          font-size: 14px;
-          text-align: center;
-          line-height: 16px;
-        }
-        &:hover i.featured-post-bar {
-          opacity: .8;
-        }
-        &:hover span.featured-post-title {
-          background-color: rgba(0, 0, 0, 0.8);
-          color: #EDEDED;
-        }
-        img {
-          max-width: 100%
+        a {
+          height: 100%;
+          display: block;
+          overflow: hidden;
+          position: relative;
+
+          i.featured-post-bar {
+            text-decoration: none;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            color: #fff;
+            opacity: .4;
+            font-size: 18px;
+          }
+          span.featured-post-title {
+            background-color: rgba(255, 255, 255, 0.85);
+            position: absolute;
+            bottom: 5px;
+            color: #444;
+            border-radius: 2px;
+            padding: 2px;
+            padding-bottom: 3px;
+            margin: 5px;
+            font-family: 'Open Sans Condensed';
+            font-weight: 700;
+            font-size: 14px;
+            text-align: center;
+            line-height: 16px;
+          }
+          &:hover i.featured-post-bar {
+            opacity: .8;
+          }
+          &:hover span.featured-post-title {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #EDEDED;
+          }
+          img {
+            max-width: 100%
+          }
         }
       }
     }
@@ -295,5 +297,65 @@ aside#wppp-5 ul#wppp-5 {
   }
 }
 
+// Mobile media queries
+@media (max-width: 600px) {
+    div#featured-bar {
+      margin-top: 10px;
+      li {
+        overflow: hidden;
+        display: block;
+        margin-right: 1.33%;
+        &:last-child {
+          margin-right: 0;
+          float: right;
+        }
+        height: 75px;
+        margin-top: 0;
+        width: 100%;
+
+        a {
+          height: 100%;
+          display: block;
+          overflow: hidden;
+          position: relative;
+
+          i.featured-post-bar {
+            text-decoration: none;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            color: #fff;
+            opacity: .4;
+            font-size: 20px;
+          }
+          span.featured-post-title {
+            background-color: rgba(255, 255, 255, 0.85);
+            position: absolute;
+            bottom: 5px;
+            color: #444;
+            border-radius: 2px;
+            padding: 2px;
+            padding-bottom: 3px;
+            margin: 5px;
+            font-family: 'Open Sans Condensed';
+            font-weight: 700;
+            font-size: 14px;
+            text-align: center;
+            line-height: 16px;
+          }
+          &:hover i.featured-post-bar {
+            opacity: .8;
+          }
+          &:hover span.featured-post-title {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #EDEDED;
+          }
+          img {
+            max-width: 100%
+          }
+        }
+      }
+    }
+}
 
 @import "font-awesome/sass/font-awesome.scss"

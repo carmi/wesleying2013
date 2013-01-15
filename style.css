@@ -93,51 +93,52 @@ header#masthead {
   header#masthead nav.main-navigation li.searchform {
     float: right;
     padding-top: 3px; }
-  header#masthead div#featured-bar li {
-    overflow: hidden;
-    display: block;
-    float: left;
-    margin-right: 1.33%;
-    width: 24%;
-    height: 100px;
-    margin-top: 14px; }
-    header#masthead div#featured-bar li:last-child {
-      margin-right: 0;
-      float: right; }
-    header#masthead div#featured-bar li a {
-      height: 100%;
-      display: block;
+  @media (min-width: 600px) {
+    header#masthead div#featured-bar li {
       overflow: hidden;
-      position: relative; }
-      header#masthead div#featured-bar li a i.featured-post-bar {
-        text-decoration: none;
-        position: absolute;
-        top: 5px;
-        right: 5px;
-        color: #fff;
-        opacity: .4;
-        font-size: 18px; }
-      header#masthead div#featured-bar li a span.featured-post-title {
-        background-color: rgba(255, 255, 255, 0.85);
-        position: absolute;
-        bottom: 5px;
-        color: #444;
-        border-radius: 2px;
-        padding: 2px;
-        padding-bottom: 3px;
-        margin: 5px;
-        font-family: 'Open Sans Condensed';
-        font-weight: 700;
-        font-size: 14px;
-        text-align: center;
-        line-height: 16px; }
-      header#masthead div#featured-bar li a:hover i.featured-post-bar {
-        opacity: .8; }
-      header#masthead div#featured-bar li a:hover span.featured-post-title {
-        background-color: rgba(0, 0, 0, 0.8);
-        color: #EDEDED; }
-      header#masthead div#featured-bar li a img {
-        max-width: 100%; }
+      display: block;
+      float: left;
+      margin-right: 1.33%;
+      width: 24%;
+      height: 100px;
+      margin-top: 14px; }
+      header#masthead div#featured-bar li:last-child {
+        margin-right: 0;
+        float: right; }
+      header#masthead div#featured-bar li a {
+        height: 100%;
+        display: block;
+        overflow: hidden;
+        position: relative; }
+        header#masthead div#featured-bar li a i.featured-post-bar {
+          text-decoration: none;
+          position: absolute;
+          top: 5px;
+          right: 5px;
+          color: #fff;
+          opacity: .4;
+          font-size: 18px; }
+        header#masthead div#featured-bar li a span.featured-post-title {
+          background-color: rgba(255, 255, 255, 0.85);
+          position: absolute;
+          bottom: 5px;
+          color: #444;
+          border-radius: 2px;
+          padding: 2px;
+          padding-bottom: 3px;
+          margin: 5px;
+          font-family: 'Open Sans Condensed';
+          font-weight: 700;
+          font-size: 14px;
+          text-align: center;
+          line-height: 16px; }
+        header#masthead div#featured-bar li a:hover i.featured-post-bar {
+          opacity: .8; }
+        header#masthead div#featured-bar li a:hover span.featured-post-title {
+          background-color: rgba(0, 0, 0, 0.8);
+          color: #EDEDED; }
+        header#masthead div#featured-bar li a img {
+          max-width: 100%; } }
 
 footer.entry-meta span.by-author span.author.vcard, footer.entry-meta span.comments-link {
   font-weight: 700; }
@@ -214,6 +215,53 @@ aside#wppp-5 ul#wppp-5 ol, aside#wppp-5 ul#wppp-5 ul {
   list-style-position: inside;
   list-style-type: disc; }
 
+@media (max-width: 600px) {
+  div#featured-bar {
+    margin-top: 10px; }
+    div#featured-bar li {
+      overflow: hidden;
+      display: block;
+      margin-right: 1.33%;
+      height: 75px;
+      margin-top: 0;
+      width: 100%; }
+      div#featured-bar li:last-child {
+        margin-right: 0;
+        float: right; }
+      div#featured-bar li a {
+        height: 100%;
+        display: block;
+        overflow: hidden;
+        position: relative; }
+        div#featured-bar li a i.featured-post-bar {
+          text-decoration: none;
+          position: absolute;
+          top: 5px;
+          right: 5px;
+          color: #fff;
+          opacity: .4;
+          font-size: 20px; }
+        div#featured-bar li a span.featured-post-title {
+          background-color: rgba(255, 255, 255, 0.85);
+          position: absolute;
+          bottom: 5px;
+          color: #444;
+          border-radius: 2px;
+          padding: 2px;
+          padding-bottom: 3px;
+          margin: 5px;
+          font-family: 'Open Sans Condensed';
+          font-weight: 700;
+          font-size: 14px;
+          text-align: center;
+          line-height: 16px; }
+        div#featured-bar li a:hover i.featured-post-bar {
+          opacity: .8; }
+        div#featured-bar li a:hover span.featured-post-title {
+          background-color: rgba(0, 0, 0, 0.8);
+          color: #EDEDED; }
+        div#featured-bar li a img {
+          max-width: 100%; } }
 /*  Font Awesome 3.0
     the iconic font designed for use with Twitter Bootstrap
     -------------------------------------------------------
