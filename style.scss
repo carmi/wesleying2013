@@ -5,7 +5,7 @@ Author: Evan Carmi
 Author URI: http://ecarmi.org/
 Description: A custom Wesleying wordpress theme designed in 2013 by Evan Carmi based of the Twenty Twelve theme.
 Template:       twentytwelve
-Version:        0.1.0
+Version:        0.2.0
 */
 
 @import url("../twentytwelve/style.css");
@@ -22,7 +22,7 @@ $border-color: #EDEDED;
 body {
   font-family: "Open Sans", sans-serif;
   text-rendering: optimizeLegibility;
-  color: #444;
+  color: black;
   background-color: #fff;
 }
 
@@ -42,7 +42,7 @@ article div.entry-content, article div.entry-content p {
   // Use rem with pixel fallback based on TwentyTwelve's setup
   font-size: 16px;
   font-size: 1.142857143rem;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 article div.entry-content strong {
