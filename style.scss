@@ -22,7 +22,7 @@ $border-color: #EDEDED;
 body {
   font-family: "Open Sans", sans-serif;
   text-rendering: optimizeLegibility;
-  color: black;
+  color: #444;
   background-color: #fff;
 }
 
@@ -40,6 +40,7 @@ article div.entry-content p {
 article div.entry-content, article div.entry-content p {
   font-family: "Crimson Text", Georgia, serif;
   // Use rem with pixel fallback based on TwentyTwelve's setup
+  color: #000;
   font-size: 16px;
   font-size: 1.142857143rem;
   line-height: 1.5;

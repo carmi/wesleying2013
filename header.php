@@ -27,6 +27,7 @@
 <![endif]-->
 
 <?php wp_head(); ?>
+<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); echo '?ver=' . filemtime( get_stylesheet_directory() . '/style.css'); ?>" type="text/css" media="all" />
 <script src="<?php echo get_bloginfo('stylesheet_directory'); ?>/js/wesleying2013.js" type="text/javascript"></script>
 </head>
 

@@ -14,7 +14,6 @@
 if ( ! isset( $content_width ) )
   $content_width = 625;
 
-
 function mytheme_dequeue_fonts() {
    wp_dequeue_style( 'twentytwelve-fonts' );
 }
