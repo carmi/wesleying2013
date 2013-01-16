@@ -13,4 +13,17 @@ jQuery(document).ready(function() {
         }, scrollDuration);
       }
     });
+    
+    // show/hide for links
+    var slideDuration = 200;
+    jQuery('span.link-cat-title').each(function() {
+      var $catTitle = jQuery(this);
+      var $catLinks = $catTitle.next();
+      $catLinks.hide();
+      $catTitle.click(function(event) {
+        event.preventDefault();
+        $catLinks.slideToggle(slideDuration);
+        $catTitle.toggleClass('links-expanded');
+      });
+    });
 });
