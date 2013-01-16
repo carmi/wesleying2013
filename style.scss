@@ -88,11 +88,11 @@ header#masthead {
     padding-top: 0rem;
     border-radius: 0px;
     opacity: 0.15;
-    $opacity-duration: .7s;
+    $opacity-duration: .3s;
     transition: opacity $opacity-duration ease-in-out;
     -moz-transition: opacity $opacity-duration ease-in-out;
     -webkit-transition: opacity $opacity-duration ease-in-out;
-    &:hover { opacity: .4; }
+    &:hover { opacity: .6; }
   }
 
   $nav-fg: #444;
@@ -304,6 +304,18 @@ aside#wppp-5 ul#wppp-5 {
   ol, ul {
     list-style-position: inside;
     list-style-type: disc;
+  }
+}
+
+article.error404 {
+  h1.entry-title {
+    font-size: 5rem;
+    width: 150%;
+  }
+  form {
+    input, button {
+      font-size: 45px;
+    }
   }
 }
 

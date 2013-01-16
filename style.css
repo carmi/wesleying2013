@@ -70,11 +70,11 @@ header#masthead {
     padding-top: 0rem;
     border-radius: 0px;
     opacity: 0.15;
-    transition: opacity 0.7s ease-in-out;
-    -moz-transition: opacity 0.7s ease-in-out;
-    -webkit-transition: opacity 0.7s ease-in-out; }
+    transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out; }
     header#masthead img.header-image:hover {
-      opacity: .4; }
+      opacity: .6; }
   header#masthead nav.main-navigation li {
     margin-right: 18px; }
     header#masthead nav.main-navigation li a {
@@ -223,6 +223,12 @@ aside#sk-3 {
 aside#wppp-5 ul#wppp-5 ol, aside#wppp-5 ul#wppp-5 ul {
   list-style-position: inside;
   list-style-type: disc; }
+
+article.error404 h1.entry-title {
+  font-size: 5rem;
+  width: 150%; }
+article.error404 form input, article.error404 form button {
+  font-size: 45px; }
 
 @media (max-width: 600px) {
   div#featured-bar {
