@@ -13,4 +13,7 @@ jQuery(document).ready(function() {
         }, scrollDuration);
       }
     });
+    
+    // accordion on links page
+    jQuery('ul.enhanced-links-1').accordion({ header: 'span.link-cat-title', active: false, collapsible: true, autoHeight: false });
 });
