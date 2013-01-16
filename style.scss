@@ -262,7 +262,7 @@ div.widget-area {
 }
 
 .widget-area .widget h3 {
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   text-align: center;
   font-size: 12px;
   color: white;
@@ -281,6 +281,16 @@ aside {
 }
 
 // Sidebar and Plugins
+
+div#social-link  {
+  text-align: center;
+  line-height: 0;
+  font-size: 30px;
+  margin-bottom: 16px;
+  a {
+    padding-right: 10px;
+    text-decoration: none;
+}}
 
 // Shoutbox
 aside#sk-3 {
