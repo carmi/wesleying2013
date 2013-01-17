@@ -29,9 +29,7 @@ div#page {
   margin-bottom: 0; }
 
 img#wpstats {
-  display: inline;
-  margin: 0;
-  float: right; }
+  margin: 0; }
 
 article div.entry-content p {
   margin-bottom: 16px; }
@@ -154,7 +152,10 @@ footer.entry-meta span.by-author span.author.vcard, footer.entry-meta span.comme
 footer#colophon {
   padding: 10px; }
   footer#colophon a.back-to-top {
-    text-decoration: none; }
+    text-decoration: none;
+    float: right;
+    font-family: 'Open Sans Condensed';
+    font-size: 16px; }
 
 div.more-link a.more-link {
   font-style: normal;

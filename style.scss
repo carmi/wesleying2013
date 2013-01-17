@@ -39,9 +39,7 @@ div#page {
 }
 
 img#wpstats {
-  display: inline;
   margin: 0;
-  float: right;
 }
 
 article div.entry-content p {
@@ -211,6 +209,9 @@ footer#colophon {
   padding: 10px;
   a.back-to-top {
     text-decoration: none;
+    float: right;
+    font-family: 'Open Sans Condensed';
+    font-size: 16px;
   }
 }
 
