@@ -25,6 +25,14 @@ body .site {
   box-shadow: none;
   margin-top: 0; }
 
+div#page {
+  margin-bottom: 0; }
+
+img#wpstats {
+  display: inline;
+  margin: 0;
+  float: right; }
+
 article div.entry-content p {
   margin-bottom: 16px; }
 
@@ -142,6 +150,11 @@ header#masthead {
 
 footer.entry-meta span.by-author span.author.vcard, footer.entry-meta span.comments-link {
   font-weight: 700; }
+
+footer#colophon {
+  padding: 10px; }
+  footer#colophon a.back-to-top {
+    text-decoration: none; }
 
 div.more-link a.more-link {
   font-style: normal;

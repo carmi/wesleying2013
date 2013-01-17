@@ -34,6 +34,16 @@ body .site {
   margin-top: 0;
 }
 
+div#page {
+  margin-bottom: 0;
+}
+
+img#wpstats {
+  display: inline;
+  margin: 0;
+  float: right;
+}
+
 article div.entry-content p {
   margin-bottom: $line-breaks;
 }
@@ -194,6 +204,13 @@ header#masthead {
 footer.entry-meta {
   span.by-author span.author.vcard, span.comments-link {
     font-weight: 700;
+  }
+}
+
+footer#colophon {
+  padding: 10px;
+  a.back-to-top {
+    text-decoration: none;
   }
 }
 

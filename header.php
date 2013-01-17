@@ -64,7 +64,7 @@
                 $image = featured_post_image();
                 ?>
                   <li><a href="<?php echo get_permalink($post->ID) ?>" title="<?php echo $post->post_title ?>" data-postid="<?php echo $post->ID ?>">
-                  <i class="icon-arrow-down featured-post-bar"></i>
+                  <i class="icon-double-angle-down featured-post-bar"></i>
                   <span class="featured-post-title"><?php echo $post->post_title ?></span>
                   <img src="<?php echo $image ?>" alt="<?php echo $post->post_title ?>" />
                 </a></li>
