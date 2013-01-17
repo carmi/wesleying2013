@@ -26,10 +26,16 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 <![endif]-->
 
+<link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,700,700italic|Open+Sans:300,600,700|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+
+<link href="<?php echo get_template_directory_uri(); ?>/style.css" rel="stylesheet" type="text/css">
 <?php wp_head(); ?>
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); echo '?ver=' . filemtime( get_stylesheet_directory() . '/style.css'); ?>" type="text/css" media="all" />
-<script src="<?php echo get_bloginfo('stylesheet_directory'); ?>/js/wesleying2013.js" type="text/javascript"></script>
+
+<script src="<?php echo bloginfo('stylesheet_directory'); echo '/js/wesleying2013.js'; echo '?ver=' . filemtime( get_stylesheet_directory() . '/js/wesleying2013.js'); ?>" type="text/javascript"></script>
 </head>
+
+<?php flush(); ?>
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
