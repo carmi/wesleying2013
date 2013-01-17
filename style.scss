@@ -319,6 +319,31 @@ article.error404 {
   }
 }
 
+// Links page custom style
+.link-cat-title {
+  color: #003E5A;
+  background-color: #FCFCFC;
+  font-size: 21px;
+  font-variant: small-caps;
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+ul.blogroll {
+  list-style-position: inside;
+}
+ul.enhanced-links-1 {
+  list-style: none;
+  li {
+    margin-left: 0;
+  }
+}
+
 // Mobile media queries
 @media (max-width: 600px) {
     div#featured-bar {

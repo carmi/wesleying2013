@@ -230,6 +230,27 @@ article.error404 h1.entry-title {
 article.error404 form input, article.error404 form button {
   font-size: 45px; }
 
+.link-cat-title {
+  color: #003E5A;
+  background-color: #FCFCFC;
+  font-size: 21px;
+  font-variant: small-caps;
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px; }
+  .link-cat-title:hover {
+    text-decoration: underline; }
+
+ul.blogroll {
+  list-style-position: inside; }
+
+ul.enhanced-links-1 {
+  list-style: none; }
+  ul.enhanced-links-1 li {
+    margin-left: 0; }
+
 @media (max-width: 600px) {
   div#featured-bar {
     margin-top: 10px; }
