@@ -118,7 +118,14 @@ function featured_post_image() {
   } else {
     $img_url = get_bloginfo("stylesheet_directory")."/images/no-featured-image.jpg";
   }
-  return $img_url;
+
+  //return $img_url;
+  // Hack to use Photon API for these images
+  // http://i2.wp.com/dev.wesleying.org/wp-content/uploads/2013/01/wesleying.jpg?w=230
+
+  $img_url = str_replace( 'http://', '', $img_url );
+  return "http://i2.wp.com/".$img_url."?w=230";
+
 }
 add_action('wp_head', 'featured_post_image');
 
