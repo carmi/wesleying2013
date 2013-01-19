@@ -30,6 +30,13 @@ body {
   background-color: #fff;
 }
 
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 body.custom-background {
   background-color: #fff!important;
 }
