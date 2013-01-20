@@ -1,0 +1,14 @@
+/*
+ * Styles effecting TinyMCE's editor.
+ * Used to make editor look more like actual posts
+ */
+
+.mceContentBody blockquote {
+  font-style: normal !important;
+  border-left: 1px solid #ededed;
+}
+
+body {
+  color: black;
+  font-family: "Crimson Text", serif;
+}
