@@ -110,21 +110,51 @@ function featured_post_image() {
   $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
   $match = $matches[1];
 
-  if (has_post_thumbnail($post->ID)) {
-    $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'single-post-thumbnail' );
-    $img_url = $thumb['0'];
-  } elseif (!empty($match)) {
-    $img_url = $match[0];
-  } else {
-    $img_url = get_bloginfo("stylesheet_directory")."/images/no-featured-image.jpg";
-  }
 
-  //return $img_url;
-  // Hack to use Photon API for these images
-  // http://i2.wp.com/dev.wesleying.org/wp-content/uploads/2013/01/wesleying.jpg?w=230
+  // Find Youtube Videos IDS from URLs
+  $search = '%          # Match any youtube URL in the wild.
+      (?:https?://)?    # Optional scheme. Either http or https
+      (?:www\.)?        # Optional www subdomain
+      (?:               # Group host alternatives
+        youtu\.be/      # Either youtu.be,
+      | youtube\.com    # or youtube.com
+        (?:             # Group path alternatives
+          /embed/       # Either /embed/
+        | /v/           # or /v/
+        | /watch\?v=    # or /watch\?v=
+        )               # End path alternatives.
+      )                 # End host alternatives.
+      ([\w\-]{10,12})   # Allow 10-12 for 11 char youtube id.
+      \b                # Anchor end to word boundary.
+      %x';
 
-  $img_url = str_replace( 'http://', '', $img_url );
-  return "http://i2.wp.com/".$img_url."?w=230";
+    $output = preg_match_all($search, $post->post_content, $youtube_matches);
+
+    $use_photon = true;
+
+
+    if (has_post_thumbnail($post->ID)) {
+      $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'single-post-thumbnail' );
+      $img_url = $thumb['0'];
+    } elseif (!empty($match)) {
+      $img_url = $match[0];
+    } elseif (!empty($youtube_matches)) {
+      $use_photon = false;
+      $youtube_match = $youtube_matches[1][0];
+      $img_url = 'http://img.youtube.com/vi/'.$youtube_match.'/mqdefault.jpg';
+    } else {
+      $img_url = get_bloginfo("stylesheet_directory")."/images/no-featured-image.jpg";
+    }
+
+    //return $img_url;
+    // Hack to use Photon API for these images
+    // http://i2.wp.com/dev.wesleying.org/wp-content/uploads/2013/01/wesleying.jpg?w=230
+
+    if ($use_photon) {
+      $img_url = str_replace( 'http://', '', $img_url );
+      return "http://i2.wp.com/".$img_url."?w=230";
+    }
+    return $img_url;
 
 }
 add_action('wp_head', 'featured_post_image');
