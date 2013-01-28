@@ -203,3 +203,15 @@ function add_search_box($items, $args) {
     return $items;
 }
 add_filter('wp_nav_menu_items','add_search_box', 10, 2);
+
+/**
+ * I want to use the basic 2012 theme but don't want TinyMCE to create
+ * unwanted HTML. By removing editor-style.css from the $editor_styles
+ * global, this code effectively undoes the call to add_editor_style()
+ * http://wordpress.org/support/topic/strange-behaviour-making-lists-in-the-visual-editor?replies=8#post-3760332
+ */
+add_action( 'after_setup_theme', 'foobar_setup', 11 );
+function foobar_setup() {
+  global $editor_styles;
+  $editor_styles = array();
+}
