@@ -6,7 +6,10 @@
  *
  */
 
-
+// The height and width of your custom header. You can hook into the theme's own filters to change these values.
+// Add a filter to twentyten_header_image_width and twentyten_header_image_height to change these values.
+define( 'HEADER_IMAGE_WIDTH', apply_filters( 'twentytwelve_header_image_width', 960 ) );
+define( 'HEADER_IMAGE_HEIGHT', apply_filters( 'twentytwelveten_header_image_height', 108 ) );
 
 /**
  * Sets up the content width value based on the theme's design and stylesheet.
