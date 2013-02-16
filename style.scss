@@ -390,8 +390,8 @@ ul.enhanced-links-1 {
           margin-right: 0;
           float: right;
         }
-        height: 75px;
-        margin-top: 0;
+        height: 28px;
+        margin-top: 5px;
         width: 100%;
 
         a {
@@ -405,18 +405,15 @@ ul.enhanced-links-1 {
             position: absolute;
             top: 5px;
             right: 5px;
-            color: #fff;
-            opacity: 0.6;
+            color: gray;
             font-size: 20px;
           }
           span.featured-post-title {
             background-color: rgba(255, 255, 255, 0.85);
-            position: absolute;
-            bottom: 5px;
             color: #444;
+            display: inline-block;
             border-radius: 2px;
-            padding: 2px;
-            padding-bottom: 3px;
+            padding: 3px;
             margin: 5px;
             font-family: 'Open Sans Condensed';
             font-weight: 700;
@@ -432,7 +429,7 @@ ul.enhanced-links-1 {
             color: #EDEDED;
           }
           img {
-            max-width: 100%
+            display: none;
           }
         }
       }
