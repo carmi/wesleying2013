@@ -277,7 +277,7 @@ ul.enhanced-links-1 {
       overflow: hidden;
       display: block;
       margin-right: 1.33%;
-      height: 28px;
+      height: 42px;
       margin-top: 5px;
       width: 100%; }
       div#featured-bar li:last-child {
@@ -301,6 +301,7 @@ ul.enhanced-links-1 {
           display: inline-block;
           border-radius: 2px;
           padding: 3px;
+          padding-right: 18px;
           margin: 5px;
           font-family: 'Open Sans Condensed';
           font-weight: 700;
